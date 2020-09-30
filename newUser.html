@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Donis Watch Repair</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="loginStyle.css">
+</head>
+<body>
+    <h1>
+    <div class="loginDiv">
+        <a class="home-text menu-text" href=home.html>Home</a>
+        <a class="services-text menu-text" href=home.html#servicesDiv>Services</a>
+        <a class="about-text menu-text" href=home.html#aboutDiv>About</a>
+        <a class="contact-text menu-text" href=home.html#contactDiv>Contact</a>
+        <a class="login-text menu-text" href=accountPage.php>Account</a>
+        <div class="login-form-text">
+        <img src="loginPerson.png" id="loginPerson">
+        <div id="userLoginText"><b>Create Account</b></div>
+        <center>
+        <form action="newAccount.php" method="POST" id="form1">
+        <table>
+        <tr>
+            <td>First Name: </td>
+            <td><input type="text" name="f_name"></td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td><input type="text" name="l_name"></td>
+        </tr>
+        <tr>
+            <td>Username: </td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>Password: </td>
+            <td><input type="text" name="password"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        </table>
+        </form>
+        </center>
+        <button type="submit" form=form1 value="Submit" class="button">Submit</button>
+        
+        </div>
+    </div>
+    </h1>
+    <script type="text/javascript" src="scriptLogin.js"></script>
+    </body>
+</html>

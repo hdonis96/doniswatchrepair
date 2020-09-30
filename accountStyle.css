@@ -1,0 +1,60 @@
+body {
+  /*background: linear-gradient(90deg, white, gray);*/
+  background-color: white
+}
+html {
+  scroll-behavior: smooth;
+}
+body, h1, p {
+  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+}
+
+.infoDiv {
+    margin-left: 5%;
+    margin-right: 10%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/*tr:nth-child(even) {
+  background-color: #dddddd;
+}*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: teal;
+}
+
+.homeLink {
+  float: left;
+}
+.logoutLink {
+  float: right;
+}
+.logoutLink:hover {
+    color: grey;
+}
+.homeLink:hover {
+    color: grey;
+}
+.accountTitle {
+    font-size: x-large;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}

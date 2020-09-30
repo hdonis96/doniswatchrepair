@@ -1,0 +1,301 @@
+body {
+  /*background: linear-gradient(90deg, white, gray);*/
+  background-color: white
+}
+html {
+  scroll-behavior: smooth;
+}
+body, h1, p {
+  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*ul li{
+   text-align: left;
+}*/
+
+ul {
+    padding: 5px;
+}
+a {
+    text-decoration: none;
+} 
+.accountLink {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.accountList {
+    float: left;
+}
+.accountNav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+.container {
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 177px;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.slides {
+   width: 100%;
+   height: 80%; 
+}
+#home_pic {
+   width: 100%;
+   height: 80%; 
+   /* filter: brightness(50%); */
+}
+#loginDiv {
+    width: 100%;
+}
+ .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+    0% {
+    opacity:0;
+    }
+    50% {
+    opacity:1;
+    }
+    90% {
+    opacity: 1;
+    } 100% {
+    opacity:0;
+    }
+}
+
+@keyframes fade {
+    0% {
+    opacity:0;
+    }
+    50% {
+    opacity:1;
+    }
+    90% {
+    opacity: 1;
+    } 100% {
+    opacity:0;
+    }
+} 
+
+
+#pic-header {
+    display: inline-block;
+}
+
+.picture-container {
+  position: relative;
+  text-align: center; 
+  color: white;
+}
+.brand-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 150%;
+  text-shadow: 2px 2px 4px #000000;
+}
+.catchphrase-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50%;
+  text-shadow: 2px 2px 4px #000000;
+  
+}
+.login-form-text {
+    position: absolute;
+    border-color: coral;
+     border-style: solid;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  color: white;
+  font-size: 50%;
+}
+.login-form-text1 {
+    
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  color: white;
+  font-size: 50%;
+}
+#aboutDiv {
+   display: inline-block;
+   text-align: right;
+}
+#contactDiv {
+   display: inline-block;
+   text-align: left;
+}
+#servicesDiv {
+  /* display: inline-block; */
+   text-align: left;
+}
+#watch-repair {
+    float:left;
+    width: 40%;
+    padding-left: 10%;
+    padding-right: 10%; 
+    padding-bottom: 10%;
+}
+#busterImg {
+   float:right; 
+    width: 30%;
+   padding-left: 10%; 
+   padding-right: 10%; 
+   padding-bottom: 10%;
+}
+#phoneImg {
+    float:left; 
+    width: 20%;
+   padding-left: 15%;
+    padding-right: 10%; 
+}
+.row {
+    display: block;
+    padding: 10px;
+}
+.menu-text {
+  position: absolute;
+  top: 8px;
+  font-size: 50%;
+}
+.menu-text:hover {
+   color: black;
+    cursor: pointer;
+}
+.home-text {
+  left: 1%;
+  color:white;
+}
+.services-text {
+  left: 9%;
+  color: white;
+}
+.about-text {
+  left: 17%;
+  color: white;
+}
+.contact-text {
+  left: 25%;
+  color: white;
+}
+.login-text {
+  left: 33%;
+  color:white;
+}
+.newUserLink {
+    color: white;        
+}
+.newUserLink:hover {
+    color: green;
+}
+
+#arrow {
+    width: 10%;
+    padding: 2px;
+    position: absolute;
+    display: inline-block;
+    text-align:left;
+    top: 0; left: 0;
+    padding: 5px;
+}
+#arrow:hover {
+    cursor: pointer;
+}
+/* .newPassword {
+    visibility: hidden; 
+}*/
+@media screen and (max-width: 1200px) { /* tablet-ish size*/
+  /* when the viewport is 800px or smaller */
+  .brand-text {
+      font-size: 100%;
+      white-space: nowrap; 
+  }
+  .catchphrase-text {
+      top: 60%;
+      white-space: nowrap; 
+  }
+  .login-form-text {
+      transform: translate(-50%, -40%);
+      white-space: nowrap; 
+  }
+  .home-text {
+      left: 1%;
+  }
+  .services-text {
+    left: 20%;
+  }
+  .about-text {
+    left: 43%;
+  }
+  .contact-text {
+    left: 60%;
+  }
+  .login-text {
+    left: 80%;
+  } 
+  .menu-text {
+    font-size: 40%;
+    }
+}
+  @media screen and (max-width: 550px) { /* mobile phone size */
+  /*.when the viewport is 550px or smaller */
+  .brand-text {
+      font-size: 50%;
+  }
+  .catchphrase-text {
+      top: 60%;
+      font-size: 20%;
+  }
+  .login-form-text {
+    /* transform: translate(-50%, 80%);*/
+      font-size: 20%;
+  }
+}

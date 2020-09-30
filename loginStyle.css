@@ -1,0 +1,163 @@
+
+html {
+  scroll-behavior: smooth;
+}
+body, h1, p {
+  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url("greenery.jpg");
+  background-color: #cccccc;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+a {
+    text-decoration: none;
+   /* color: white; */
+}
+.button {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  margin-bottom: 20px;
+  width: 60%;
+  
+}
+#loginPerson {
+    width: 10%;
+}
+#loginDiv {
+    position: relative;
+  text-align: center;
+  width: 100%;
+}
+.button:hover {
+    background-color: grey;
+    
+}
+
+.login-form-text {
+    text-align: center;
+    position: absolute;
+    border-color: white;
+    border-style: solid;
+    background-color: white;
+    color: black;
+    top: 30%;
+    left: 30%;
+  /*  transform: translate(-50%, -120%); */
+    font-size: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.userLoginText {
+    margin-bottom: 20%;
+    background-color: white;
+    
+}
+
+#servicesDiv {
+   display: inline-block;
+   text-align: left;
+}
+#watch-repair {
+    float:left;
+    width: 40%;
+    padding-right: 40px;
+}
+.menu-text {
+  position: absolute;
+  top: 8px;
+  font-size: 50%;
+}
+.menu-text:hover {
+   color: black;
+    cursor: pointer;
+}
+.home-text {
+  left: 1%;
+  color:white;
+}
+.services-text {
+  left: 9%;
+  color: white;
+}
+.about-text {
+  left: 17%;
+  color: white;
+}
+.contact-text {
+  left: 25%;
+  color: white;
+}
+.login-text {
+  left: 33%;
+  color:white;
+}
+.newUserLink {
+    color: blue;        
+}
+.newUserLink:hover {
+    color: green;
+}
+@media screen and (max-width: 1200px) { /* tablet-ish size*/
+  /* when the viewport is 800px or smaller */
+  .brand-text {
+      font-size: 100%;
+      white-space: nowrap; 
+  }
+  .catchphrase-text {
+      top: 60%;
+      white-space: nowrap; 
+  }
+  .login-form-text {
+      transform: translate(-50%, -40%);
+      white-space: nowrap; 
+  }
+  .home-text {
+      left: 1%;
+  }
+  .services-text {
+    left: 20%;
+  }
+  .about-text {
+    left: 43%;
+  }
+  .contact-text {
+    left: 60%;
+  }
+  .login-text {
+    left: 80%;
+  } 
+  .menu-text {
+    font-size: 40%;
+    }
+}
+  @media screen and (max-width: 550px) { /* mobile phone size */
+  /*.when the viewport is 550px or smaller */
+  .brand-text {
+      font-size: 50%;
+  }
+  .catchphrase-text {
+      top: 60%;
+      font-size: 20%;
+  }
+  .login-form-text {
+    /* transform: translate(-50%, 80%);*/
+      font-size: 20%;
+  }
+}
