@@ -1,9 +1,9 @@
 <?php
-
+// Validates login credentials and renders account info
 session_start();
 
 if( isset( $_SESSION['username'] ) ) {
-      $validity = checkCredentials();
+      $validity = queryDB('checkCredentials');
       if($validity == 0) {
           echo "wrong credentials";
           $_SESSION = [];
@@ -30,22 +30,9 @@ if( isset( $_SESSION['username'] ) ) {
                 <th>Status</th>
                 <th>Price</th>
                 <th>Details</th>
-                </tr>
-                <tr>
-                <td>08-05-20</td>
-                <td>Overhall- Rolex</td>
-                <td>Processing</td>
-                <td>$100</td>
-                <td>not paid</td>
-                </tr>
-                <td>08-01-20</td>
-                <td>Overhall - Seiko</td>
-                <td>Complete</td>
-                <td>$100</td>
-                <td>paid</td>
-                </tr>
-               </table>";
-        
+                </tr>";
+        queryDB('populateTable');
+        echo "</table>";
       }
 } else {
     echo "wrong credentials";
@@ -53,7 +40,7 @@ if( isset( $_SESSION['username'] ) ) {
     header('Location: http://doniswatchrepair.com/login.html');
 }
 
-function checkCredentials() {
+function queryDB($queryType) {
     $myfile = fopen("../js/configs.txt", "r") or die("Unable to open file!!");
     $cookieUsername =  $_SESSION['username'];
     $cookiePassword =  $_SESSION['password'];
@@ -63,7 +50,11 @@ function checkCredentials() {
     $dbaPassword = rtrim(fgets($myfile));
     $usertable= rtrim(fgets($myfile));
     $dbaname = rtrim(fgets($myfile));
-   
+     
+    if(strcmp($queryType, 'populateTable') == 0) {
+      $usertable = 'Services';
+    }
+
     $connect = mysqli_connect($host,$dbausername, $dbaPassword) or die ("<html><script language='JavaScript'>alert('Unable to connect to database! Please try again later.'),history.go(-1)</script></html>");
     mysqli_select_db($connect, $dbaname);
     
@@ -74,14 +65,28 @@ function checkCredentials() {
     if ($result) {
     // found username:
         while($row = mysqli_fetch_array($result)) {
-            //check password:
-            if(strcmp($row['password'], $cookiePassword) !=0) {
-                fclose($myfile);
+            //check credentials:
+            if(strcmp($queryType, 'checkCredentials') == 0) {
+               if(strcmp($row['password'], $cookiePassword) !=0) {
+                fclose($myfile); //credentials are incorrect
                 return 0;
-            }
-            else { 
-                fclose($myfile);
-                return 1; //match
+                }
+                else {
+                    // credentials are correct
+                    fclose($myfile);
+                    return 1; //match
+                }
+            } 
+            //else populate table:
+            else {
+                echo 
+                "<tr>
+                <td>{$row['Date']}</td>
+                <td>{$row['Description']}</td>
+                <td>{$row['Status']}</td>
+                <td>{$row['Price']}</td>
+                <td>{$row['Details']}</td>
+                </tr>";
             }
         }
     }
