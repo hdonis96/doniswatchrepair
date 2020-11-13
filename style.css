@@ -22,7 +22,7 @@ ul {
 }
 a {
     text-decoration: none;
-} 
+}
 .accountLink {
   display: block;
   color: white;
@@ -72,11 +72,11 @@ p {
 
 .slides {
    width: 100%;
-   height: 80%; 
+   height: 80%;
 }
 #home_pic {
    width: 100%;
-   height: 80%; 
+   height: 80%;
    /* filter: brightness(50%); */
 }
 #loginDiv {
@@ -115,7 +115,7 @@ p {
     } 100% {
     opacity:0;
     }
-} 
+}
 
 
 #pic-header {
@@ -124,7 +124,7 @@ p {
 
 .picture-container {
   position: relative;
-  text-align: center; 
+  text-align: center;
   color: white;
 }
 .brand-text {
@@ -144,7 +144,7 @@ p {
   color: white;
   font-size: 50%;
   text-shadow: 2px 2px 4px #000000;
-  
+
 }
 .login-form-text {
     position: absolute;
@@ -157,7 +157,7 @@ p {
   font-size: 50%;
 }
 .login-form-text1 {
-    
+
     position: absolute;
   top: 50%;
   left: 50%;
@@ -181,21 +181,21 @@ p {
     float:left;
     width: 40%;
     padding-left: 10%;
-    padding-right: 10%; 
+    padding-right: 10%;
     padding-bottom: 10%;
 }
 #busterImg {
-   float:right; 
+   float:right;
     width: 30%;
-   padding-left: 10%; 
-   padding-right: 10%; 
+   padding-left: 10%;
+   padding-right: 10%;
    padding-bottom: 10%;
 }
 #phoneImg {
-    float:left; 
+    float:left;
     width: 20%;
    padding-left: 15%;
-    padding-right: 10%; 
+    padding-right: 10%;
 }
 .row {
     display: block;
@@ -231,7 +231,7 @@ p {
   color:white;
 }
 .newUserLink {
-    color: white;        
+    color: white;
 }
 .newUserLink:hover {
     color: green;
@@ -250,21 +250,21 @@ p {
     cursor: pointer;
 }
 /* .newPassword {
-    visibility: hidden; 
+    visibility: hidden;
 }*/
 @media screen and (max-width: 1200px) { /* tablet-ish size*/
   /* when the viewport is 800px or smaller */
   .brand-text {
       font-size: 100%;
-      white-space: nowrap; 
+      white-space: nowrap;
   }
   .catchphrase-text {
       top: 60%;
-      white-space: nowrap; 
+      white-space: nowrap;
   }
   .login-form-text {
       transform: translate(-50%, -40%);
-      white-space: nowrap; 
+      white-space: nowrap;
   }
   .home-text {
       left: 1%;
@@ -280,7 +280,7 @@ p {
   }
   .login-text {
     left: 80%;
-  } 
+  }
   .menu-text {
     font-size: 40%;
     }
@@ -299,3 +299,4 @@ p {
       font-size: 20%;
   }
 }
+
