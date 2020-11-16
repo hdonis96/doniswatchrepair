@@ -5,12 +5,14 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.img {
+    border-radius: 10%;
+}
 body, h1, p {
   font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 /*ul li{
@@ -22,6 +24,9 @@ ul {
 }
 a {
     text-decoration: none;
+}
+.homeImgs {
+    border-radius: 50%;
 }
 .accountLink {
   display: block;
@@ -72,7 +77,7 @@ p {
 
 .slides {
    width: 100%;
-   height: 80%;
+  /* height: 80%; */
 }
 #home_pic {
    width: 100%;
@@ -123,29 +128,29 @@ p {
 }
 
 .picture-container {
-  position: relative;
+ /* position: relative;
   text-align: center;
-  color: white;
+  color: white; */
 }
 .brand-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 150%;
-  text-shadow: 2px 2px 4px #000000;
+  position: relative;
+  margin-left: 5%;
+  color: black;
+  font-size: 110%;
 }
 .catchphrase-text {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 50%;
-  text-shadow: 2px 2px 4px #000000;
-
+  position: relative;
+  margin-left: 5%;
+  color: black;
+  font-size: 40%;
 }
+.phone {
+  position: relative;
+  margin-left: 80%;
+  color: black;
+  font-size: 50%;
+}
+
 .login-form-text {
     position: absolute;
     border-color: coral;
@@ -153,7 +158,7 @@ p {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -120%);
-  color: white;
+  color: black;
   font-size: 50%;
 }
 .login-form-text1 {
@@ -162,8 +167,15 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -120%);
-  color: white;
+  color: black;
   font-size: 50%;
+}
+.picDiv {
+    position: relative;
+    width: 50%;
+    margin-top: 5%;
+    left: 25%;
+    margin-bottom: 10%;
 }
 #aboutDiv {
    display: inline-block;
@@ -180,55 +192,65 @@ p {
 #watch-repair {
     float:left;
     width: 40%;
-    padding-left: 10%;
+  /*  padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 10%;*/
+
 }
 #busterImg {
    float:right;
     width: 30%;
-   padding-left: 10%;
+   /*padding-left: 10%;
    padding-right: 10%;
-   padding-bottom: 10%;
+   padding-bottom: 10%;*/
 }
 #phoneImg {
     float:left;
     width: 20%;
-   padding-left: 15%;
-    padding-right: 10%;
+   /*padding-left: 15%;
+    padding-right: 10%; */
 }
 .row {
     display: block;
     padding: 10px;
 }
 .menu-text {
-  position: absolute;
-  top: 8px;
+ /* position: absolute;
+  top: 8px; */
   font-size: 50%;
 }
 .menu-text:hover {
-   color: black;
+   color: darkgray;
     cursor: pointer;
 }
+hr {
+  margin-bottom: -1%;
+}
 .home-text {
-  left: 1%;
-  color:white;
+  position: relative;
+  margin-left: 5%;
+ /* top: 21%;*/
+  color:black;
 }
 .services-text {
-  left: 9%;
-  color: white;
+  position: relative;
+  margin-left: 5%;
+  /*top: 21%;*/
+  color: black;
 }
 .about-text {
-  left: 17%;
-  color: white;
+  margin-left: 5%;
+   /*top: 21%;*/
+  color: black;
 }
 .contact-text {
-  left: 25%;
-  color: white;
+  margin-left: 5%;
+   /*top: 21%;*/
+  color: black;
 }
 .login-text {
-  left: 33%;
-  color:white;
+  margin-left: 5%;
+  color:black;
 }
 .newUserLink {
     color: white;
@@ -254,49 +276,36 @@ p {
 }*/
 @media screen and (max-width: 1200px) { /* tablet-ish size*/
   /* when the viewport is 800px or smaller */
-  .brand-text {
-      font-size: 100%;
-      white-space: nowrap;
-  }
-  .catchphrase-text {
-      top: 60%;
-      white-space: nowrap;
-  }
-  .login-form-text {
-      transform: translate(-50%, -40%);
-      white-space: nowrap;
-  }
-  .home-text {
-      left: 1%;
-  }
-  .services-text {
-    left: 20%;
-  }
-  .about-text {
-    left: 43%;
-  }
-  .contact-text {
-    left: 60%;
-  }
-  .login-text {
-    left: 80%;
-  }
-  .menu-text {
-    font-size: 40%;
-    }
+
+  .phone {
+     position: relative;
+     margin-left: 70%;
+     font-size: 40%;
+   }
 }
   @media screen and (max-width: 550px) { /* mobile phone size */
   /*.when the viewport is 550px or smaller */
-  .brand-text {
-      font-size: 50%;
-  }
-  .catchphrase-text {
-      top: 60%;
-      font-size: 20%;
-  }
+ /*
   .login-form-text {
-    /* transform: translate(-50%, 80%);*/
       font-size: 20%;
+  } */
+  .phone {
+     position: relative;
+     margin-left: 50%;
+   }
+    .home-text {
+      display: none;
+  }
+  .services-text {
+    display: none;
+  }
+  .about-text {
+    display: none;
+  }
+  .contact-text {
+    display: none;
+  }
+  .brand-text {
+     font-size: 80%;
   }
 }
-
