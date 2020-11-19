@@ -24,7 +24,7 @@ ul {
 }
 a {
     text-decoration: none;
-}
+} 
 .homeImgs {
     border-radius: 50%;
 }
@@ -81,7 +81,7 @@ p {
 }
 #home_pic {
    width: 100%;
-   height: 80%;
+   height: 80%; 
    /* filter: brightness(50%); */
 }
 #loginDiv {
@@ -120,7 +120,7 @@ p {
     } 100% {
     opacity:0;
     }
-}
+} 
 
 
 #pic-header {
@@ -129,7 +129,7 @@ p {
 
 .picture-container {
  /* position: relative;
-  text-align: center;
+  text-align: center; 
   color: white; */
 }
 .brand-text {
@@ -148,7 +148,7 @@ p {
   position: relative;
   margin-left: 80%;
   color: black;
-  font-size: 50%;
+  font-size: 50%; 
 }
 
 .login-form-text {
@@ -162,7 +162,7 @@ p {
   font-size: 50%;
 }
 .login-form-text1 {
-
+    
     position: absolute;
   top: 50%;
   left: 50%;
@@ -174,40 +174,52 @@ p {
     position: relative;
     width: 50%;
     margin-top: 5%;
-    left: 25%;
+    left: 25%; 
     margin-bottom: 10%;
 }
 #aboutDiv {
    display: inline-block;
    text-align: right;
+   margin-right: 10%;
+    margin-top: 5%;
+}
+#aboutText {
+    margin-left: 40%; 
+    text-align: right;
 }
 #contactDiv {
    display: inline-block;
    text-align: left;
+   margin-left: 20%;
+   margin-bottom: 10%;
+   margin-top: 10%;
 }
 #servicesDiv {
-  /* display: inline-block; */
+   display: inline-block; 
    text-align: left;
+   margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
-#watch-repair {
+#watch-repair-pic {
     float:left;
-    width: 40%;
-  /*  padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;*/
-
+    width: 50%;
+}
+.serviceList {
+    margin-left: 10%;
+    padding-left: 45%;
 }
 #busterImg {
-   float:right;
+   float:right; 
     width: 30%;
-   /*padding-left: 10%;
-   padding-right: 10%;
-   padding-bottom: 10%;*/
+ /*  padding-left: 10%; 
+   padding-right: 10%; 
+   padding-bottom: 10%; */
 }
 #phoneImg {
-    float:left;
-    width: 20%;
-   /*padding-left: 15%;
+    float:left; 
+    width: 30%;
+  /* padding-left: 15%;
     padding-right: 10%; */
 }
 .row {
@@ -223,8 +235,11 @@ p {
    color: darkgray;
     cursor: pointer;
 }
-hr {
+hr.hr--header {
   margin-bottom: -1%;
+}
+hr.hr--small {
+    border-top: 1px solid #e7e7e7;
 }
 .home-text {
   position: relative;
@@ -253,7 +268,7 @@ hr {
   color:black;
 }
 .newUserLink {
-    color: white;
+    color: white;        
 }
 .newUserLink:hover {
     color: green;
@@ -272,26 +287,45 @@ hr {
     cursor: pointer;
 }
 /* .newPassword {
-    visibility: hidden;
+    visibility: hidden; 
 }*/
+.footer {
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(221, 221, 221);
+    padding: 5px;
+}
+.footerBody {
+    margin-left: 10%;
+}
+#tradeMark {
+    margin-bottom: 1%;
+    font-size: 14px;
+}
+#connectText {
+    font-size: 20px;
+    margin-top: 1%;
+}
 @media screen and (max-width: 1200px) { /* tablet-ish size*/
   /* when the viewport is 800px or smaller */
 
   .phone {
      position: relative;
      margin-left: 70%;
-     font-size: 40%;
+     font-size: 40%; 
    }
 }
   @media screen and (max-width: 550px) { /* mobile phone size */
   /*.when the viewport is 550px or smaller */
- /*
+ /* 
   .login-form-text {
       font-size: 20%;
-  } */
+  } */ 
   .phone {
      position: relative;
-     margin-left: 50%;
+     margin-left: 50%; 
    }
     .home-text {
       display: none;
@@ -305,7 +339,25 @@ hr {
   .contact-text {
     display: none;
   }
-  .brand-text {
-     font-size: 80%;
+  .login-text {
+      margin-left: 70%;
   }
-}
+  .brand-text {
+  font-size: 80%;
+  }
+  #aboutDiv {
+      text-align: right;
+  }
+  #col {
+      padding-left: 10%;
+      margin-left: 10%;
+  }
+  #aboutText {
+    margin-left: 10%;
+  }
+  #contactDiv {
+   margin-left: 0%;
+   margin-bottom: 10%;
+   margin-top: 10%;
+ }
+} 
